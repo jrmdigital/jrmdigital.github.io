@@ -1,0 +1,151 @@
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(fonts/Montserrat-Regular.ttf);
+  }
+
+body {
+  font-family: Montserrat-Regular;
+  color: #fff;
+  overflow-y: auto;
+  background: rgba(20, 0, 51, 0.4) !important;
+}
+
+svg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+/* -------SECTIONS CSS---------- */
+section {
+  padding: 200px 0;
+  text-align: center;
+  min-height: 110vh;
+}
+section:last-of-type {
+  padding-bottom: 300px;
+}
+.bg-dark {
+  color: #fff;
+  background: rgba(10, 0, 46, 0.8) !important;
+}
+.navbar-nav li a {
+  border-radius: 0.25rem;
+  transition: all 0.5s ease-in;
+}
+.navbar-nav li.active a {
+  background: #0a002e;
+  color: #fff !important;
+}
+.nav-link-correct{
+    color: rgba(255, 255, 255, 1) !important;
+}
+.navbar-toggler{
+    color: rgba(255, 255, 255, 0.8) !important;
+    border-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+@media (max-width: 768px) {
+  section:first-of-type {
+    padding-top: 80px;
+  }
+  .navbar-nav {
+    padding: 0px;
+  }
+
+  .navbar-nav li a {
+    padding-left: 20px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  section:first-of-type {
+    padding-top: 100px;
+  }
+
+  .navbar-theme {
+    background: none !important;
+  }
+  .navbar-brand {
+    display: none;
+  }
+  .navbar-nav li a {
+    color: #fff;
+    margin: 0;
+    padding: 10px 20px !important;
+  }
+}
+.btn-theme {
+  background-color: #0a002e;
+  border: 1px solid rgb(10, 0, 46);
+  color: #fff;
+}
+.color-theme {
+  /* color: #136F63; */
+  color: #B0413E;
+}
+
+.color-theme-eppique {
+  color: #abb06e;
+  text-shadow: -1px -1px 0 #696969, 1px -1px 0 #696969, -1px 1px 0 #696969, 1px 1px 0 #696969;
+}
+
+#home-slides, #product-slides {
+  margin: 20px 0;
+}
+
+.container-fluid-correct{
+    max-width: 750px;
+}
+
+.p-correct{
+    text-align: justify;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.justify-text{
+    text-align: justify;
+}
+
+.btn-next {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #ccc;
+  font-size: 20px;
+  line-height: 50px;
+  margin: 20px auto;
+  animation: blink 1s ease-in-out alternate infinite;
+}
+.btn-next:hover {
+  color: #fff;
+}
+
+.arrow-correct{
+    line-height: 50px;
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/*  OVERLAY PATTERN  */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba(20, 0, 51, 0.4);
+  }
